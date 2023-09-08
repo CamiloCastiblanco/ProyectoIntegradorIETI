@@ -16,6 +16,6 @@ public interface UserService
 
     void deleteById(String id);
 
-    User update(UserDTO userdto, String id);
+    User update(User user, String id);
 
 }

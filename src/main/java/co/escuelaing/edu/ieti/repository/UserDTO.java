@@ -9,11 +9,10 @@ public class UserDTO {
     public UserDTO() {
     }
 
-    public UserDTO(String name, String email, String lastName, String password) {
+    public UserDTO(String name, String email, String lastName) {
         this.name = name;
         this.email = email;
         this.lastName = lastName;
-        this.password = password;
     }
 
     public String getName() {

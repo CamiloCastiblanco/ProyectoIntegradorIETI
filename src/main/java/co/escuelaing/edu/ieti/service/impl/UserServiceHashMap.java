@@ -16,8 +16,11 @@ public class UserServiceHashMap implements UserService {
 
     @Override
     public User save(User user) {
+        if(findById(user.getId()).isEmpty()){
+            user.setId(String.valueOf(usersMap.size()));
+        }
         usersMap.put(user.getId(), user);
-        return user;
+        return usersMap.get(user.getId());
     }
 
     @Override
@@ -41,14 +44,10 @@ public class UserServiceHashMap implements UserService {
 
 
     @Override
-    public User update(UserDTO userDto, String id) {
-        if (usersMap.containsKey(id)) {
-            User user = usersMap.get(id);
-            user.update(userDto);
-            return user;
-        } else {
-            return null;
-        }
+    public User update(User user, String userId) {
+        User userToUpdate = usersMap.get(userId);
+        userToUpdate.update(new UserDTO(user.getName(), user.getLastName(), user.getEmail()));
+        return userToUpdate;
     }
 
 
