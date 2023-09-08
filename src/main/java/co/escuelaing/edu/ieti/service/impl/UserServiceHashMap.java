@@ -1,4 +1,6 @@
 package co.escuelaing.edu.ieti.service.impl;
+import co.escuelaing.edu.ieti.repository.User;
+import co.escuelaing.edu.ieti.repository.UserDTO;
 import co.escuelaing.edu.ieti.service.UserService;
 import org.springframework.stereotype.Service;
 
