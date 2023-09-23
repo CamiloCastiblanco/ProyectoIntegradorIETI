@@ -1,4 +1,4 @@
-package co.escuelaing.edu.ieti.service;
+package co.escuelaing.edu.ieti.service.car;
 
 import co.escuelaing.edu.ieti.repository.Car;
 

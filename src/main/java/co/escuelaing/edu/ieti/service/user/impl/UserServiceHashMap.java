@@ -1,7 +1,7 @@
-package co.escuelaing.edu.ieti.service.impl;
+package co.escuelaing.edu.ieti.service.user.impl;
 import co.escuelaing.edu.ieti.repository.User;
 import co.escuelaing.edu.ieti.repository.UserDTO;
-import co.escuelaing.edu.ieti.service.UserService;
+import co.escuelaing.edu.ieti.service.user.UserService;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;

@@ -1,7 +1,7 @@
-package co.escuelaing.edu.ieti.service.impl;
+package co.escuelaing.edu.ieti.service.car;
 import co.escuelaing.edu.ieti.repository.Car;
 import co.escuelaing.edu.ieti.repository.CarMongoRepository;
-import co.escuelaing.edu.ieti.service.CarService;
+import co.escuelaing.edu.ieti.service.car.CarService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

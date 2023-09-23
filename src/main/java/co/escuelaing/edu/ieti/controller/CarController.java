@@ -1,6 +1,6 @@
 package co.escuelaing.edu.ieti.controller;
 import co.escuelaing.edu.ieti.repository.Car;
-import co.escuelaing.edu.ieti.service.CarService;
+import co.escuelaing.edu.ieti.service.car.CarService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
