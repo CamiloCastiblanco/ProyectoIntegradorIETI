@@ -5,16 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ad9c79b3-7120-4393-9230-cc668a440784" name="Changes" comment="Repository and Fixing errors">
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/escuelaing/edu/ieti/repository/UserMongoRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/escuelaing/edu/ieti/service/user/impl/UserServiceMongoDb.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Classes.asta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/escuelaing/edu/ieti/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/escuelaing/edu/ieti/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/escuelaing/edu/ieti/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/escuelaing/edu/ieti/service/user/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/escuelaing/edu/ieti/service/impl/UserServiceHashMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/escuelaing/edu/ieti/service/user/impl/UserServiceHashMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/escuelaing/edu/ieti/controller/health/HealthController.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,5 +146,16 @@
     <MESSAGE value="Service and HashMap" />
     <MESSAGE value="Repository and Fixing errors" />
     <option name="LAST_COMMIT_MESSAGE" value="Repository and Fixing errors" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/co/escuelaing/edu/ieti/controller/UserController.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
