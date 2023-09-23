@@ -33,12 +33,6 @@ public class User {
 
     }
 
-    public User(String id, String name, String email, String lastName,String password, String createdAt) {
-        this(name, email, lastName, password);
-        this.id = id;
-        this.createdAt = createdAt;
-    }
-
     public void update(UserDTO userDto) {
         name = userDto.getName();
         lastName = userDto.getLastName();
@@ -51,8 +45,6 @@ public class User {
             this.password = BCrypt.hashpw(password, BCrypt.gensalt());
         }
     }
-
-
 
     public String getId() {
         return id;
@@ -101,6 +93,5 @@ public class User {
     public void setPassword(String password) {
         hashPassword(password);
     }
-
 
 }
