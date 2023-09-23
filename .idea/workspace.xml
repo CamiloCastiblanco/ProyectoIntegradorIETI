@@ -5,13 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ad9c79b3-7120-4393-9230-cc668a440784" name="Changes" comment="Repository and Fixing errors">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/escuelaing/edu/ieti/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/escuelaing/edu/ieti/exception/UserNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/escuelaing/edu/ieti/repository/UserMongoRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/escuelaing/edu/ieti/service/user/impl/UserServiceMongoDb.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/escuelaing/edu/ieti/repository/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/escuelaing/edu/ieti/repository/UserDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/escuelaing/edu/ieti/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/escuelaing/edu/ieti/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/escuelaing/edu/ieti/service/impl/UserServiceHashMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/escuelaing/edu/ieti/service/impl/UserServiceHashMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/escuelaing/edu/ieti/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/escuelaing/edu/ieti/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/escuelaing/edu/ieti/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/escuelaing/edu/ieti/service/user/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/escuelaing/edu/ieti/service/impl/UserServiceHashMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/escuelaing/edu/ieti/service/user/impl/UserServiceHashMap.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +25,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -59,7 +63,8 @@
     "last_opened_file_path": "/home/camiloc/IdeaProjects/ProyectoIntegradorIETI",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
   }
 }]]></component>
   <component name="RunManager">

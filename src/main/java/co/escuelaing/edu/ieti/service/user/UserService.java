@@ -1,4 +1,4 @@
-package co.escuelaing.edu.ieti.service;
+package co.escuelaing.edu.ieti.service.user;
 
 import co.escuelaing.edu.ieti.repository.User;
 import co.escuelaing.edu.ieti.repository.UserDTO;

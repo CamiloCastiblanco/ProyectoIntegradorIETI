@@ -3,7 +3,7 @@ package co.escuelaing.edu.ieti.controller;
 import co.escuelaing.edu.ieti.exception.UserNotFoundException;
 import co.escuelaing.edu.ieti.repository.User;
 import co.escuelaing.edu.ieti.repository.UserDTO;
-import co.escuelaing.edu.ieti.service.UserService;
+import co.escuelaing.edu.ieti.service.user.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
