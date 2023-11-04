@@ -4,6 +4,8 @@ import co.escuelaing.edu.ieti.repository.User;
 import co.escuelaing.edu.ieti.repository.UserMongoRepository;
 import co.escuelaing.edu.ieti.service.user.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.mongodb.core.aggregation.ArithmeticOperators.Sin;
+import org.springframework.security.crypto.bcrypt.BCrypt;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -17,6 +19,27 @@ public class UserServiceMongoDb implements UserService {
     @Autowired
     public UserServiceMongoDb(UserMongoRepository userMongoRepository) {
         this.userMongoRepository = userMongoRepository;
+    }
+
+    
+
+    @Override
+    public User login(String email, String password) {
+        Optional<User> userOptional = userMongoRepository.findByEmail(email);
+
+        if (userOptional.isPresent()) {
+            User user = userOptional.get();
+
+            if (passwordMatches(password, user.getPassword())) {
+                return user;
+            }
+        }
+
+        return null; // Devuelve null si la autenticación falla
+    }
+
+    private boolean passwordMatches(String rawPassword, String encodedPassword) {
+        return rawPassword.equals(encodedPassword);
     }
 
     @Override

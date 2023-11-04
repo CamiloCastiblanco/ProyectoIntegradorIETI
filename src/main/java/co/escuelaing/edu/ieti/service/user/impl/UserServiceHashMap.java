@@ -24,6 +24,16 @@ public class UserServiceHashMap implements UserService {
     }
 
     @Override
+    public User login(String email, String password) {
+
+        return null; // Devuelve null si la autenticación falla
+    }
+
+    private boolean passwordMatches(String rawPassword, String encodedPassword) {
+        return rawPassword.equals(encodedPassword);
+    }
+
+    @Override
     public Optional<User> findById(String id) {
         if (usersMap.containsKey(id)) {
             return Optional.ofNullable(usersMap.get(id));

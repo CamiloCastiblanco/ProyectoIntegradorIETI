@@ -21,6 +21,25 @@ public class UsersServiceMongoDb implements UserService {
     }
 
     @Override
+    public User login(String email, String password) {
+        Optional<User> userOptional = userMongoRepository.findByEmail(email);
+
+        if (userOptional.isPresent()) {
+            User user = userOptional.get();
+
+            if (passwordMatches(password, user.getPassword())) {
+                return user;
+            }
+        }
+
+        return null; // Devuelve null si la autenticación falla
+    }
+
+    private boolean passwordMatches(String rawPassword, String encodedPassword) {
+        return rawPassword.equals(encodedPassword);
+    }
+
+    @Override
     public User save(User user) {
         Optional<User> product = findById(user.getId());
         if(product.isEmpty()){

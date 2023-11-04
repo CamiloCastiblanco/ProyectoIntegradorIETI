@@ -18,4 +18,6 @@ public interface UserService
 
     User update(User user, String id);
 
+    User login(String email, String password);
+
 }
