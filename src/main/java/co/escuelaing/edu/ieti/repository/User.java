@@ -1,9 +1,30 @@
 package co.escuelaing.edu.ieti.repository;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.Getter;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
+import org.springframework.security.core.userdetails.UserDetails;
+
+
+import java.util.Collection;
+import java.util.Date;
+import java.util.List;
+
 
 import java.util.UUID;
 
-public class User {
+@Document("Users")
+@Builder
+@Data
+@AllArgsConstructor
+public class User implements UserDetails{
     private String id;
     private String name;
     private String email;
@@ -17,8 +38,7 @@ public class User {
     }
 
     public User() {
-        this.id = UUID.randomUUID().toString();
-        this.createdAt = java.time.LocalDate.now().toString();
+        this.createdAt = String.valueOf(new Date());
     }
 
     public User(String name, String email, String lastName, String password) {
@@ -79,8 +99,38 @@ public class User {
         this.createdAt = createdAt;
     }
 
+    @Override
+    public Collection<? extends GrantedAuthority> getAuthorities() {
+        return List.of(new SimpleGrantedAuthority(name));
+    }
+
     public String getPassword() {
         return password;
+    }
+
+    @Override
+    public String getUsername() {
+        return null;
+    }
+
+    @Override
+    public boolean isAccountNonExpired() {
+        return false;
+    }
+
+    @Override
+    public boolean isAccountNonLocked() {
+        return false;
+    }
+
+    @Override
+    public boolean isCredentialsNonExpired() {
+        return false;
+    }
+
+    @Override
+    public boolean isEnabled() {
+        return false;
     }
 
     public void setPassword(String password) {

@@ -5,44 +5,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ad9c79b3-7120-4393-9230-cc668a440784" name="Changes" comment="Repository and Fixing errors">
-      <change afterPath="$PROJECT_DIR$/Classes.asta.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/escuelaing/edu/ieti/controller/JwtAuthenticationController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/escuelaing/edu/ieti/repository/JwtRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/escuelaing/edu/ieti/repository/JwtResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/escuelaing/edu/ieti/security/JwtAuthenticationEntryPoint.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/escuelaing/edu/ieti/service/security/JwtUserDetailsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/escuelaing/edu/ieti/service/security/JwtUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/escuelaing/edu/ieti/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/escuelaing/edu/ieti/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/escuelaing/edu/ieti/controller/CarController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/escuelaing/edu/ieti/controller/CarController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/escuelaing/edu/ieti/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/escuelaing/edu/ieti/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/escuelaing/edu/ieti/repository/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/escuelaing/edu/ieti/repository/Car.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/escuelaing/edu/ieti/repository/CarDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/escuelaing/edu/ieti/repository/CarDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/escuelaing/edu/ieti/repository/CarMongoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/escuelaing/edu/ieti/repository/CarMongoRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/escuelaing/edu/ieti/controller/JwtAuthenticationController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/escuelaing/edu/ieti/repository/JwtRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/escuelaing/edu/ieti/repository/JwtResponse.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/co/escuelaing/edu/ieti/repository/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/escuelaing/edu/ieti/repository/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/escuelaing/edu/ieti/repository/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/escuelaing/edu/ieti/repository/UserDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/escuelaing/edu/ieti/security/JwtRequestFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/escuelaing/edu/ieti/security/JwtRequestFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/escuelaing/edu/ieti/security/SecurityConfiguration.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/escuelaing/edu/ieti/security/TokenAuthentication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/escuelaing/edu/ieti/security/encrypt/BCryptPasswordEncryptionService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/escuelaing/edu/ieti/security/encrypt/PasswordEncryptionService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/escuelaing/edu/ieti/service/car/CarService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/escuelaing/edu/ieti/service/car/CarService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/escuelaing/edu/ieti/service/car/CarServiceMongoDb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/escuelaing/edu/ieti/service/car/CarServiceMongoDb.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/escuelaing/edu/ieti/service/user/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/escuelaing/edu/ieti/service/user/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/escuelaing/edu/ieti/service/user/impl/UserServiceHashMap.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/escuelaing/edu/ieti/service/user/impl/UserServiceMongoDb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/escuelaing/edu/ieti/service/user/impl/UserServiceMongoDb.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/escuelaing/edu/ieti/service/user/impl/UsersServiceMongoDb.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/escuelaing/edu/ieti/utils/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/escuelaing/edu/ieti/utils/Constants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/co/escuelaing/edu/ieti/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/co/escuelaing/edu/ieti/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/co/escuelaing/edu/ieti/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/co/escuelaing/edu/ieti/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/co/escuelaing/edu/ieti/controller/health/HealthController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/escuelaing/edu/ieti/repository/UserMongoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/escuelaing/edu/ieti/repository/UserMongoRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/escuelaing/edu/ieti/security/JwtAuthenticationEntryPoint.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/escuelaing/edu/ieti/service/security/JwtUserDetailsService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/escuelaing/edu/ieti/service/security/JwtUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ProyectoIntegradorIETI-0.0.1-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ProyectoIntegradorIETI-0.0.1-SNAPSHOT.jar.original" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/co/escuelaing/edu/ieti/App$SecurityConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/co/escuelaing/edu/ieti/controller/JwtAuthenticationController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/co/escuelaing/edu/ieti/repository/JwtRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/co/escuelaing/edu/ieti/repository/JwtResponse.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/co/escuelaing/edu/ieti/repository/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/co/escuelaing/edu/ieti/repository/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/co/escuelaing/edu/ieti/repository/UserDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/co/escuelaing/edu/ieti/repository/UserDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/co/escuelaing/edu/ieti/service/user/impl/UserServiceHashMap.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/co/escuelaing/edu/ieti/service/user/impl/UserServiceMongoDb.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/co/escuelaing/edu/ieti/service/user/impl/UserServiceMongoDb.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/co/escuelaing/edu/ieti/repository/UserMongoRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/co/escuelaing/edu/ieti/repository/UserMongoRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/co/escuelaing/edu/ieti/security/JwtAuthenticationEntryPoint.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/co/escuelaing/edu/ieti/security/JwtRequestFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/co/escuelaing/edu/ieti/service/security/JwtUserDetailsService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/co/escuelaing/edu/ieti/service/security/JwtUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
