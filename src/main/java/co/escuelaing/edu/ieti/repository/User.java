@@ -1,13 +1,11 @@
 package co.escuelaing.edu.ieti.repository;
 
-import java.util.ArrayList;
-import java.util.List;
+
 import java.util.UUID;
-import org.springframework.security.crypto.bcrypt.BCrypt;
+
 public class User {
     private String id;
     private String name;
-
     private String email;
     private String lastName;
     private String createdAt;
@@ -28,7 +26,7 @@ public class User {
         this.name = name;
         this.email = email;
         this.lastName = lastName;
-        hashPassword(password);
+        setPassword(password);
 
 
     }
@@ -37,14 +35,9 @@ public class User {
         name = userDto.getName();
         lastName = userDto.getLastName();
         email = userDto.getEmail();
-        hashPassword(userDto.getPassword());
+        password = userDto.getPassword();
     }
-
-    private void hashPassword(String password){
-        if (password != null) {
-            this.password = BCrypt.hashpw(password, BCrypt.gensalt());
-        }
-    }
+    
 
     public String getId() {
         return id;
@@ -91,7 +84,7 @@ public class User {
     }
 
     public void setPassword(String password) {
-        hashPassword(password);
+        this.password = password;
     }
 
 }

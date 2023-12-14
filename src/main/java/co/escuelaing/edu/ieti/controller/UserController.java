@@ -6,24 +6,35 @@ import co.escuelaing.edu.ieti.repository.UserDTO;
 import co.escuelaing.edu.ieti.service.user.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
+
 import java.net.URI;
+import java.util.Date;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @RestController
-@RequestMapping("/v1/user/")
+@RequestMapping("/v1/user")
 public class UserController {
 
     @Autowired
-    private final UserService userService;
+    private UserService userService;
+    @PostMapping("user")
+	public User login(@RequestParam("user") String username, @RequestParam("password") String pwd) {	
+		
+		User user = new User();
+		user.setName(username);
+		user.setPassword(pwd);		
+		return user;
+		
+	}    
 
-    public UserController(@Autowired UserService userService) {
-        this.userService = userService;
-    }
+    
 
-    @PostMapping
+    @PostMapping("/")
     public ResponseEntity<User> createUser(@RequestBody UserDTO userDTO) {
         User userCreated = userService.save(new User(userDTO));
         URI createdUserUri = ServletUriComponentsBuilder

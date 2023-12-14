@@ -21,7 +21,6 @@ public class UserServiceMongoDb implements UserService {
 
     @Override
     public User save(User user) {
-
         return userMongoRepository.save(user);
     }
 

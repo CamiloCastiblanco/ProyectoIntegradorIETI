@@ -85,7 +85,6 @@ public class Car {
     private double rentalPricePerDay;
 
 
-    // getters y setters
     public void setId(String id) {
         this.id = id;
     }

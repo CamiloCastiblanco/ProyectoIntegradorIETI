@@ -2,15 +2,15 @@ package co.escuelaing.edu.ieti.repository;
 
 public class CarDTO {
     private String id;
-    private String make;
+    private String make;  
+    private String model;
+    private int year;
+    private double rentalPricePerHour;
+    private double rentalPricePerDay;
 
     public String getId() {
         return id;
     }
-
-    private String model;
-    private int year;
-    private double rentalPricePerHour;
 
     public String getMake() {
         return make;
@@ -51,11 +51,7 @@ public class CarDTO {
     public void setModel(String model) {
         this.model = model;
     }
-
-    private double rentalPricePerDay;
-
-
-    // getters y setters
+        
     public void setId(String id) {
         this.id = id;
     }

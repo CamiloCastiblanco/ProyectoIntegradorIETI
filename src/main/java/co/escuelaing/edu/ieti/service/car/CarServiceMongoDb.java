@@ -1,23 +1,18 @@
 package co.escuelaing.edu.ieti.service.car;
 import co.escuelaing.edu.ieti.repository.Car;
 import co.escuelaing.edu.ieti.repository.CarMongoRepository;
-import co.escuelaing.edu.ieti.service.car.CarService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import java.util.List;
 import java.util.Optional;
 
 @Service
 public class CarServiceMongoDb implements CarService {
-    private final CarMongoRepository carMongoRepository;
-
     @Autowired
-    public CarServiceMongoDb(CarMongoRepository carMongoRepository) {
-        this.carMongoRepository = carMongoRepository;
-    }
+    private CarMongoRepository carMongoRepository;   
+    
 
-    public List<Car> getAllCars() {
+    public List<Car> all() {
         return carMongoRepository.findAll();
     }
 
@@ -27,16 +22,18 @@ public class CarServiceMongoDb implements CarService {
 
     public Car save(Car car) {
         return carMongoRepository.save(car);
-    }
-
-    public void update(String id, Car updatedCar) {
-        if (carMongoRepository.existsById(id)) {
-            updatedCar.setId(id);
-            carMongoRepository.save(updatedCar);
-        }
-    }
+    }    
 
     public void deleteById(String id) {
         carMongoRepository.deleteById(id);
+    }
+
+    @Override
+    public Car update(Car car, String id) {
+        if (carMongoRepository.existsById(id)) {
+            car.setId(id);
+            carMongoRepository.save(car);
+        }
+        throw new UnsupportedOperationException("Unimplemented method 'update'");
     }
 }
