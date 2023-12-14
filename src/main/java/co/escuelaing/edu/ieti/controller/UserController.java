@@ -6,24 +6,58 @@ import co.escuelaing.edu.ieti.repository.UserDTO;
 import co.escuelaing.edu.ieti.service.user.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.AuthorityUtils;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
+import io.jsonwebtoken.Jwts;
+import io.jsonwebtoken.SignatureAlgorithm;
 import java.net.URI;
+import java.util.Date;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @RestController
-@RequestMapping("/v1/user/")
+@RequestMapping("/v1/user")
 public class UserController {
 
     @Autowired
-    private final UserService userService;
+    private UserService userService;
+    @PostMapping("user")
+	public User login(@RequestParam("user") String username, @RequestParam("password") String pwd) {
+		
+		String token = getJWTToken(username);
+		User user = new User();
+		user.setName(username);
+		user.setPassword(token);		
+		return user;
+		
+	}
+    private String getJWTToken(String username) {
+		String secretKey = "mySecretKey";
+		List<GrantedAuthority> grantedAuthorities = AuthorityUtils
+				.commaSeparatedStringToAuthorityList("ROLE_USER");
+		
+		String token = Jwts
+				.builder()
+				.setId("softtekJWT")
+				.setSubject(username)
+				.claim("authorities",
+						grantedAuthorities.stream()
+								.map(GrantedAuthority::getAuthority)
+								.collect(Collectors.toList()))
+				.setIssuedAt(new Date(System.currentTimeMillis()))
+				.setExpiration(new Date(System.currentTimeMillis() + 600000))
+				.signWith(SignatureAlgorithm.HS512,
+						secretKey.getBytes()).compact();
 
-    public UserController(@Autowired UserService userService) {
-        this.userService = userService;
-    }
+		return "Bearer " + token;
+	}
 
-    @PostMapping
+    
+
+    @PostMapping("/")
     public ResponseEntity<User> createUser(@RequestBody UserDTO userDTO) {
         User userCreated = userService.save(new User(userDTO));
         URI createdUserUri = ServletUriComponentsBuilder

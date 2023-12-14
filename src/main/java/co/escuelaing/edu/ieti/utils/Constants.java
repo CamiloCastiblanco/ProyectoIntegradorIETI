@@ -2,9 +2,7 @@ package co.escuelaing.edu.ieti.utils;
 
 public interface Constants {
     String CLAIMS_ROLES_KEY = "claims";
-
     int TOKEN_DURATION_MINUTES = 1440;
-    public static final String COOKIE_NAME = "";
 
     String ADMIN_ROLE = "ADMIN";
     String USER_ROLE = "USER";

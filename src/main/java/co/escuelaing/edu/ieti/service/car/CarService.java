@@ -11,9 +11,9 @@ public interface CarService {
 
     Optional<Car> findById(String id);
 
-    List<Car> getAllCars();
+    List<Car> all();
 
     void deleteById(String id);
 
-    void update(String id, Car car);
+    Car update(Car car, String id);
 }
